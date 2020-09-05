@@ -22,9 +22,13 @@ class Welcome extends CI_Controller {
 	{
 		// $this->load->view('welcome_message');
 	}
+	public function nombres()
+	{
+		echo "henry ramos alberot";
+	}
 	public function saludar()
 	{
-
+		$this->load->helper('url');
 		$datos=[
 			'nombre'=>"jose luis",
 			'apellido'=>"perez",
@@ -32,5 +36,9 @@ class Welcome extends CI_Controller {
 		];
 		$this->load->view('saludar',$datos);
 		
+	}
+	public function despedir()
+	{
+		echo "nos vemos chau";
 	}
 }
