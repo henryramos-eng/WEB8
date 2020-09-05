@@ -26,5 +26,6 @@ class Welcome extends CI_Controller {
 	{
 		echo "estoy saludando";
 		echo "estoy saludando2";
+		$this->load->view('saludar');
 	}
 }
